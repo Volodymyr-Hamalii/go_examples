@@ -20,10 +20,12 @@ func main() {
 	//var userName string = getName()
 
 	const maxTickets uint8 = 50
-	var remainingTickets uint = 50
+	var remainingTickets uint8 = 50
 
-	var bookings [50]string
+	//var bookings [50]string
 
+	var bookedTickets = maxTickets - remainingTickets
+	fmt.Printf("You have booked %v tickets", bookedTickets)
 
 
 }
