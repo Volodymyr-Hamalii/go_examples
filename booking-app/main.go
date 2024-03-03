@@ -3,21 +3,10 @@ package main
 
 import "fmt"
 
-func getName() string {
-	fmt.Println("Print your name:")
-
-	var userName string
-	fmt.Scan(&userName)
-
-	fmt.Printf("Okay, your name is %v.", userName)
-
-	return userName
-}
-
 func main() {
 	fmt.Println("Welcome!")
 
-	//var userName string = getName()
+	var userName string = GetName()
 
 	const maxTickets uint8 = 50
 	var remainingTickets uint8 = 50
@@ -25,7 +14,7 @@ func main() {
 	//var bookings [50]string
 
 	var bookedTickets = maxTickets - remainingTickets
-	fmt.Printf("You have booked %v tickets", bookedTickets)
+	fmt.Printf("%v have booked %v tickets", userName, bookedTickets)
 
 
 }
