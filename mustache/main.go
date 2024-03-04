@@ -24,6 +24,8 @@ func main() {
 	productJSON, _ := json.Marshal(product)
 	json.Unmarshal(productJSON, &productMap)
 
+	fmt.Println("productMap\n", productMap)
+
 	// Template string
 	templateString := "Product Name: {{name}}, Address: {{address}}"
 
